@@ -1,0 +1,13 @@
+tsvからinsert文を作る
+
+データを持っていく用途です。
+
+select * from テーブル名 where 何かしらの条件
+
+vimでtsvを開く
+
+:%s/\t/','/g
+:%s/$/');
+:%s/^/insert into テーブル名 values ('/g
+
+テーブル名を正しくいれて、ペーストする。
